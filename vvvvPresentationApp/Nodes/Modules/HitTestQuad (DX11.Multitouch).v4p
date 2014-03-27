@@ -1,6 +1,6 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.2.dtd" >
-   <PATCH nodename="C:\Users\Uberact\Documents\GitHub\UBE-5-DM-KinectMachines\Touch-Base_KinectMachines\Application\KinectMachines\Modules\HitTest-Quad (multitouch).v4p" systemname="HitTest-Quad (multitouch)" filename="D:\GitHub\PUL-4-MUS-EmiratesICE\Touch-Base_EmiratesICE\Application\EmiratesICE\Modules\HitTest-Quad (multitouch).v4p">
-   <BOUNDS type="Window" left="10500" top="7785" width="11040" height="7065">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta31.2.dtd" >
+   <PATCH nodename="C:\Users\Gareth Griffiths\Documents\GitHub\vvvvPresentationApp\vvvvPresentationApp\Nodes\Modules\HitTestQuad (DX11.Multitouch).v4p" systemname="HitTest-Quad (multitouch)" filename="D:\GitHub\PUL-4-MUS-EmiratesICE\Touch-Base_EmiratesICE\Application\EmiratesICE\Modules\HitTest-Quad (multitouch).v4p">
+   <BOUNDS type="Window" left="17430" top="4890" width="11040" height="7065">
    </BOUNDS>
    <NODE systemname="HitTest (2d Quad)" filename="%VVVV%\addonpack\lib\nodes\plugins\HitTest2dNodes.dll" nodename="HitTest (2d Quad)" componentmode="Hidden" id="9">
    <BOUNDS type="Node" left="3597" top="2283" width="2964" height="264">
@@ -16,18 +16,6 @@
    <PIN pinname="Object Id" visible="1">
    </PIN>
    <PIN pinname="Point Id" visible="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="Quad (DX9)" nodename="Quad (DX9)" componentmode="Hidden" id="8" hiddenwhenlocked="1">
-   <BOUNDS type="Node" left="150" top="3237" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Transform" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Color" slicecount="1" values="|1.00000,0.76459,0.76459,0.72944|" visible="1">
-   </PIN>
-   <PIN pinname="Layer" visible="1">
-   </PIN>
-   <PIN pinname="Enabled" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="7">
@@ -116,14 +104,6 @@
    </NODE>
    <LINK srcnodeid="10" srcpinname="Output Node" dstnodeid="9" dstpinname="Transform In">
    </LINK>
-   <LINK srcnodeid="10" srcpinname="Output Node" dstnodeid="8" dstpinname="Transform" hiddenwhenlocked="1" linkstyle="Bezier">
-   <LINKPOINT x="1656" y="1912">
-   </LINKPOINT>
-   <LINKPOINT x="312" y="2000">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="8" srcpinname="Layer" dstnodeid="4" dstpinname="Input Node" hiddenwhenlocked="1">
-   </LINK>
    <LINK srcnodeid="10" srcpinname="Output Node" dstnodeid="3" dstpinname="Input Node">
    </LINK>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="11" hiddenwhenlocked="1">
@@ -136,12 +116,6 @@
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="11" srcpinname="Y Output Value" dstnodeid="8" dstpinname="Enabled" hiddenwhenlocked="1" linkstyle="Bezier">
-   <LINKPOINT x="4896" y="1908">
-   </LINKPOINT>
-   <LINKPOINT x="1944" y="2004">
-   </LINKPOINT>
-   </LINK>
    <NODE systemname="Switch (Color Input)" nodename="Switch (Color Input)" componentmode="Hidden" id="12" hiddenwhenlocked="1">
    <BOUNDS type="Node" left="936" top="2820" width="100" height="100">
    </BOUNDS>
@@ -159,8 +133,6 @@
    </LINKPOINT>
    <LINKPOINT x="996" y="2676">
    </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="12" srcpinname="Output" dstnodeid="8" dstpinname="Color" hiddenwhenlocked="1">
    </LINK>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="15">
    <BOUNDS type="Node" left="5520" top="3900" width="100" height="100">
@@ -209,5 +181,45 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="18" srcpinname="Color Output" dstnodeid="12" dstpinname="Input 1" hiddenwhenlocked="1">
+   </LINK>
+   <NODE systemname="Quad (DX11.Layer)" nodename="Quad (DX11.Layer)" componentmode="Hidden" id="8" hiddenwhenlocked="1" filename="%VVVV%\packs\DX11\nodes\plugins\VVVV.DX11.Nodes.dll">
+   <BOUNDS type="Node" left="150" top="3237" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Color" visible="1">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Enabled" visible="1">
+   </PIN>
+   <PIN pinname="Render State" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="10" srcpinname="Output Node" dstnodeid="8" dstpinname="Transform" hiddenwhenlocked="1" linkstyle="Bezier">
+   <LINKPOINT x="1656" y="1912">
+   </LINKPOINT>
+   <LINKPOINT x="312" y="2000">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="8" srcpinname="Layer" dstnodeid="4" dstpinname="Input Node" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="11" srcpinname="Y Output Value" dstnodeid="8" dstpinname="Enabled" hiddenwhenlocked="1" linkstyle="Bezier">
+   <LINKPOINT x="4896" y="1908">
+   </LINKPOINT>
+   <LINKPOINT x="1944" y="2004">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="12" srcpinname="Output" dstnodeid="8" dstpinname="Color" hiddenwhenlocked="1">
+   </LINK>
+   <NODE systemname="Blend (DX11.RenderState)" filename="%VVVV%\packs\DX11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Blend (DX11.RenderState)" componentmode="Hidden" id="19" hiddenwhenlocked="1">
+   <BOUNDS type="Node" left="135" top="2190" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Mode" slicecount="1" values="Blend">
+   </PIN>
+   <PIN pinname="Render State" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="19" srcpinname="Render State" dstnodeid="8" dstpinname="Render State" hiddenwhenlocked="1">
    </LINK>
    </PATCH>

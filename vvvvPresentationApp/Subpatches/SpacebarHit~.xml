@@ -1,0 +1,41 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta31.2.dtd" >
+   <PATCH nodename="C:\Users\Gareth Griffiths\Documents\GitHub\vvvvPresentationApp\vvvvPresentationApp\Subpatches\SpacebarHit.v4p" systemname="SpacebarHit" filename="C:\Users\Gareth Griffiths\Documents\GitHub\vvvvPresentationApp\vvvvPresentationApp\Subpatches\SpacebarHit.v4p">
+   <BOUNDS type="Window" left="14775" top="6315" width="9000" height="6000">
+   </BOUNDS>
+   <NODE systemname="Keyboard (System Window)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Keyboard (System Window)" componentmode="Hidden" id="0">
+   <BOUNDS type="Node" left="1095" top="1440" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Keyboard" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="1095" top="1440">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="KeyMatch (String)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="KeyMatch (String)" componentmode="Hidden" id="2">
+   <BOUNDS type="Node" left="1095" top="2280" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Keyboard" visible="1">
+   </PIN>
+   <PIN pinname="Key Match" slicecount="1" values="space">
+   </PIN>
+   <BOUNDS type="Box" left="1095" top="2280">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Keyboard" dstnodeid="2" dstpinname="Keyboard">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="3" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="1095" top="3660" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1095" top="3660" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="2" srcpinname="Space" dstnodeid="3" dstpinname="Y Input Value">
+   </LINK>
+   </PATCH>
