@@ -1,7 +1,7 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta31.2.dtd" >
    <PATCH nodename="C:\Users\Gareth Griffiths\Documents\GitHub\vvvvPresentationApp\vvvvPresentationApp\Subpatches\Title.v4p" systemname="Title" filename="C:\Users\Gareth Griffiths\Documents\GitHub\vvvvPresentationApp\vvvvPresentationApp\Subpatches\Title.v4p">
    <NODE systemname="Text (DX11.Layer)" filename="%VVVV%\packs\DX11\nodes\plugins\VVVV.DX11.Nodes.Text.dll" nodename="Text (DX11.Layer)" componentmode="Hidden" id="0">
-   <BOUNDS type="Node" left="1500" top="2340" width="100" height="100">
+   <BOUNDS type="Node" left="1515" top="2385" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Font" slicecount="1" values="Tahoma">
    </PIN>
@@ -13,7 +13,7 @@
    </PIN>
    </NODE>
    <NODE systemname="R (Color Advanced)" nodename="R (Color Advanced)" componentmode="Hidden" id="1" filename="%VVVV%\addonpack\lib\nodes\plugins\RSNodes.dll">
-   <BOUNDS type="Node" left="2310" top="1875" width="100" height="100">
+   <BOUNDS type="Node" left="1515" top="855" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Receive String">
    </PIN>
@@ -21,9 +21,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="2" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="2310" top="1500" width="735" height="255">
+   <BOUNDS type="Box" left="1515" top="480" width="735" height="255">
    </BOUNDS>
-   <BOUNDS type="Node" left="2310" top="1500" width="0" height="0">
+   <BOUNDS type="Node" left="1515" top="480" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" values="Grey">
    </PIN>
@@ -37,14 +37,12 @@
    <NODE id="4" systemname="IOBox (String)" componentmode="InABox" nodename="IOBox (String)">
    <PIN pinname="Descriptive Name" slicecount="1" values="String">
    </PIN>
-   <BOUNDS type="Box" left="1500" top="500" width="750" height="240">
+   <BOUNDS type="Box" left="210" top="560" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="1500" top="500" width="750" height="240">
+   <BOUNDS type="Node" left="210" top="560" width="750" height="240">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="4" srcpinname="Output String" dstnodeid="0" dstpinname="String">
-   </LINK>
-   <LINK srcnodeid="1" srcpinname="Output" dstnodeid="0" dstpinname="Color">
    </LINK>
    <NODE id="5" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Layer">
@@ -58,34 +56,66 @@
    </LINK>
    <LINK srcnodeid="2" srcpinname="Output String" dstnodeid="1" dstpinname="Receive String">
    </LINK>
-   <BOUNDS type="Window" left="20640" top="9570" width="4695" height="3945">
+   <BOUNDS type="Window" left="15720" top="8655" width="6390" height="5445">
    </BOUNDS>
-   <NODE systemname="Transform (Transform 2d)" nodename="Transform (Transform 2d)" componentmode="Hidden" id="6">
-   <BOUNDS type="Node" left="3090" top="1845" width="100" height="100">
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="8" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="3945" top="405" width="480" height="480">
    </BOUNDS>
-   <PIN pinname="TranslateY" slicecount="1" values="0.47">
-   </PIN>
-   <PIN pinname="ScaleY" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="6" srcpinname="Transform Out" dstnodeid="0" dstpinname="Transform In">
-   </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="7" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="3645" top="1290" width="795" height="240">
+   <BOUNDS type="Node" left="3945" top="405" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Node" left="3645" top="1290" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0.68">
+   <PIN pinname="Y Input Value" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Precision" slicecount="1" values="4">
    </PIN>
-   <PIN pinname="Y Output Value" visible="1">
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Enabled">
    </PIN>
    </NODE>
-   <LINK srcnodeid="7" srcpinname="Y Output Value" dstnodeid="6" dstpinname="ScaleX">
+   <LINK srcnodeid="8" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Enabled">
    </LINK>
-   <LINK srcnodeid="7" srcpinname="Y Output Value" dstnodeid="6" dstpinname="ScaleY">
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="9" systemname="IOBox (Node)">
+   <BOUNDS type="Box" left="5040" top="1080" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5040" top="1080" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Node" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Transform In|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="9" srcpinname="Output Node" dstnodeid="0" dstpinname="Transform In">
+   </LINK>
+   <NODE systemname="SetAlpha (Color)" nodename="SetAlpha (Color)" componentmode="Hidden" id="10">
+   <BOUNDS type="Node" left="1500" top="1650" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="Output" dstnodeid="10" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="10" srcpinname="Output" dstnodeid="0" dstpinname="Color">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="11" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="2670" top="660" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2670" top="660" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Alpha">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="11" srcpinname="Y Output Value" dstnodeid="10" dstpinname="Alpha">
    </LINK>
    </PATCH>

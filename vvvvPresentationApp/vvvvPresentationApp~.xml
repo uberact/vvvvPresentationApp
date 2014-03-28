@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta31.2.dtd" >
    <PATCH nodename="C:\Users\Gareth Griffiths\Documents\GitHub\vvvvPresentationApp\vvvvPresentationApp\vvvvPresentationApp.v4p" systemname="vvvvPresentationApp" filename="D:\GitHub\vvvvPresentationApp\vvvvPresentationApp\vvvvPresentationApp.v4p">
-   <BOUNDS type="Window" left="0" top="0" width="15855" height="15600">
+   <BOUNDS type="Window" left="0" top="0" width="15285" height="15600">
    </BOUNDS>
    <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\DX11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="InAWindow" id="0" border="0">
    <BOUNDS type="Node" left="2265" top="12930" width="100" height="100">
@@ -37,7 +37,7 @@
    <LINK srcnodeid="5" srcpinname="Layer Out" dstnodeid="0" dstpinname="Layers">
    </LINK>
    <NODE systemname="State (State)" filename="Nodes\Modules\State\State (State).v4p" nodename="State (State)" componentmode="Hidden" id="6">
-   <BOUNDS type="Node" left="10335" top="4995" width="4725" height="270">
+   <BOUNDS type="Node" left="6330" top="4995" width="4725" height="270">
    </BOUNDS>
    <PIN pinname="Reset" visible="1">
    </PIN>
@@ -45,9 +45,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="7" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="10335" top="285" width="3345" height="2985">
+   <BOUNDS type="Box" left="6330" top="285" width="3345" height="2985">
    </BOUNDS>
-   <BOUNDS type="Node" left="10335" top="285" width="0" height="0">
+   <BOUNDS type="Node" left="6330" top="285" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="10" values="|Intro [image]|,|Bacardi iBar [video]|,|Absolut Blank [image]|,|Absolut Blank [video]|,|Heineken Bottle Wall [image]|,|Heineken Bottle Wall [video]|,|Felix&apos;s Machines Kinect [image]|,|Felix&apos;s Machines Kinect [video]|,|Panasonic Monument [image]|,|Panasonic Monument [video]|">
    </PIN>
@@ -71,9 +71,9 @@
    <LINK srcnodeid="7" srcpinname="Output String" dstnodeid="6" dstpinname="State List">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="8" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="13815" top="195" width="600" height="2835">
+   <BOUNDS type="Box" left="9810" top="195" width="600" height="2835">
    </BOUNDS>
-   <BOUNDS type="Node" left="13815" top="195" width="0" height="0">
+   <BOUNDS type="Node" left="9810" top="195" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="10" values="0,0,0,0,0,0,0,0,0,0">
    </PIN>
@@ -99,9 +99,11 @@
    </PIN>
    <PIN pinname="Show Grid" slicecount="1" values="1">
    </PIN>
+   <PIN pinname="X Input Value" slicecount="10" values="0,0,0,0,0,0,0,0,0,0">
+   </PIN>
    </NODE>
    <NODE systemname="ResetSend (Send)" filename="Nodes\Modules\State\ResetSend (Send).v4p" nodename="ResetSend (Send)" componentmode="Hidden" id="11">
-   <BOUNDS type="Node" left="14205" top="3645" width="100" height="100">
+   <BOUNDS type="Node" left="10200" top="3645" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Window" left="10680" top="4125" width="3375" height="3510">
    </BOUNDS>
@@ -111,9 +113,9 @@
    <LINK srcnodeid="11" srcpinname="Reset" dstnodeid="6" dstpinname="Reset">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="12" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="10350" top="5610" width="1515" height="240">
+   <BOUNDS type="Box" left="6345" top="5610" width="1515" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="10350" top="5610" width="0" height="0">
+   <BOUNDS type="Node" left="6345" top="5610" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -129,9 +131,9 @@
    <LINK srcnodeid="6" srcpinname="State" dstnodeid="12" dstpinname="Input String">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="13" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="12675" top="4425" width="795" height="240">
+   <BOUNDS type="Box" left="8670" top="4425" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="12675" top="4425" width="0" height="0">
+   <BOUNDS type="Node" left="8670" top="4425" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" values="Intro">
    </PIN>
@@ -155,7 +157,7 @@
    <LINK srcnodeid="17" srcpinname="Color Output" dstnodeid="0" dstpinname="Background Color">
    </LINK>
    <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="21">
-   <BOUNDS type="Node" left="11115" top="4455" width="100" height="100">
+   <BOUNDS type="Node" left="7110" top="4455" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 2" visible="1" slicecount="10" values="0,0,0,0,0,0,0,0,0,0">
    </PIN>
@@ -167,7 +169,7 @@
    <LINK srcnodeid="21" srcpinname="Output" dstnodeid="6" dstpinname="Hit List">
    </LINK>
    <NODE systemname="NextState (State)" filename="Nodes\Modules\State\NextState (State).v4p" nodename="NextState (State)" componentmode="Hidden" id="24">
-   <BOUNDS type="Node" left="11115" top="3735" width="100" height="100">
+   <BOUNDS type="Node" left="7110" top="3750" width="100" height="100">
    </BOUNDS>
    <PIN pinname="State List" visible="1">
    </PIN>
@@ -225,7 +227,9 @@
    </PIN>
    <PIN pinname="Layer Out" visible="1">
    </PIN>
-   <PIN pinname="Input Count" slicecount="1" values="2">
+   <PIN pinname="Input Count" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Layer 3" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="29" srcpinname="Layer Out" dstnodeid="5" dstpinname="Layer In">
@@ -290,18 +294,10 @@
    </NODE>
    <LINK srcnodeid="41" srcpinname="Output String" dstnodeid="40" dstpinname="Send String">
    </LINK>
-   <NODE nodename="IOBox (Node)" componentmode="InABox" id="60" systemname="IOBox (Node)">
-   <BOUNDS type="Box" left="5670" top="12105" width="795" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="5670" top="12105" width="0" height="0">
-   </BOUNDS>
-   </NODE>
-   <LINK srcnodeid="0" srcpinname="Touch Data" dstnodeid="60" dstpinname="Input Node">
-   </LINK>
    <NODE systemname="MouseiXY (DX11.Multitouch)" filename="Nodes\Modules\MouseiXY (DX11.Multitouch).v4p" nodename="Nodes\Modules\MouseiXY (DX11.Multitouch).v4p" componentmode="Hidden" id="64">
-   <BOUNDS type="Node" left="6173" top="9138" width="0" height="0">
+   <BOUNDS type="Node" left="3143" top="1698" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="1673" top="6375" width="9000" height="7650">
+   <BOUNDS type="Box" left="0" top="0" width="9000" height="7650">
    </BOUNDS>
    <BOUNDS type="Window" left="7238" top="3363" width="9000" height="7650">
    </BOUNDS>
@@ -313,7 +309,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="60" top="4350" width="2145" height="2265">
    </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="|To do:&cr;&lf;&cr;&lf;Need video overlay images|">
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|To do:&cr;&lf;&cr;&lf;Video Rewind&cr;&lf;&cr;&lf;New Felix&apos;s Machines vid|">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>
@@ -323,27 +319,29 @@
    </PIN>
    </NODE>
    <NODE systemname="VideoLoader" filename="Subpatches\VideoLoader.v4p" componentmode="Hidden" id="15" nodename="Subpatches\VideoLoader.v4p">
-   <BOUNDS type="Node" left="3420" top="10650" width="100" height="100">
+   <BOUNDS type="Node" left="3435" top="9150" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="3420" top="10650" width="4800" height="3600">
+   <BOUNDS type="Box" left="3435" top="9150" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="3675" top="3285" width="12075" height="9945">
+   <BOUNDS type="Window" left="0" top="0" width="15285" height="15600">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
    <PIN pinname="iXY" visible="1">
    </PIN>
+   <PIN pinname="Transform In" visible="1">
+   </PIN>
+   <PIN pinname="Play" visible="1">
+   </PIN>
+   <PIN pinname="Video Position" visible="1">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="64" srcpinname="iXY" dstnodeid="15" dstpinname="iXY">
-   </LINK>
-   <LINK srcnodeid="15" srcpinname="Layer" dstnodeid="29" dstpinname="Layer 2">
-   </LINK>
-   <NODE systemname="SlideImages" filename="Subpatches\SlideImages.v4p" componentmode="InAWindow" id="68" nodename="Subpatches\SlideImages.v4p">
-   <BOUNDS type="Node" left="2955" top="7275" width="100" height="100">
+   <NODE systemname="SlideImages" filename="Subpatches\SlideImages.v4p" componentmode="Hidden" id="68" nodename="Subpatches\SlideImages.v4p">
+   <BOUNDS type="Node" left="3255" top="7215" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="2955" top="7275" width="4800" height="3600">
+   <BOUNDS type="Box" left="3255" top="7215" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="13005" top="2295" width="12480" height="13305">
+   <BOUNDS type="Window" left="2325" top="2520" width="12480" height="13305">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
@@ -363,5 +361,61 @@
    <LINK srcnodeid="24" srcpinname="Output" dstnodeid="21" dstpinname="Input 1">
    </LINK>
    <LINK srcnodeid="8" srcpinname="Y Output Value" dstnodeid="21" dstpinname="Input 2">
+   </LINK>
+   <NODE systemname="SlideVideos" filename="Subpatches\SlideVideos.v4p" nodename="Subpatches\SlideVideos.v4p" componentmode="Hidden" id="70">
+   <BOUNDS type="Node" left="4965" top="7995" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Window" left="0" top="0" width="15285" height="15600">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="Play" visible="1">
+   </PIN>
+   <PIN pinname="Video Position" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="15" srcpinname="Layer" dstnodeid="29" dstpinname="Layer 2">
+   </LINK>
+   <LINK srcnodeid="70" srcpinname="Layer" dstnodeid="29" dstpinname="Layer 3" linkstyle="Bezier">
+   <LINKPOINT x="5700" y="10485">
+   </LINKPOINT>
+   <LINKPOINT x="3645" y="9765">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="70" srcpinname="Transform Out" dstnodeid="15" dstpinname="Transform In">
+   </LINK>
+   <LINK srcnodeid="70" srcpinname="Play" dstnodeid="15" dstpinname="Play">
+   </LINK>
+   <NODE systemname="S (Value Advanced)" filename="%VVVV%\addonpack\lib\nodes\plugins\RSNodes.dll" nodename="S (Value Advanced)" componentmode="Hidden" id="71">
+   <BOUNDS type="Node" left="3135" top="2775" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="64" srcpinname="iXY" dstnodeid="71" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="72" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="3375" top="2265" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3375" top="2265" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="iXY">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="send">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="72" srcpinname="Output String" dstnodeid="71" dstpinname="Send String">
+   </LINK>
+   <LINK srcnodeid="15" srcpinname="Video Position" dstnodeid="70" dstpinname="Video Position" linkstyle="Bezier">
+   <LINKPOINT x="7785" y="10575">
+   </LINKPOINT>
+   <LINKPOINT x="6495" y="6255">
+   </LINKPOINT>
    </LINK>
    </PATCH>

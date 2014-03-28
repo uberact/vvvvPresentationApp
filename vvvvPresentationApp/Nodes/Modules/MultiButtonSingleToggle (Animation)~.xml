@@ -58,11 +58,7 @@
    </NODE>
    <LINK srcnodeid="11" srcpinname="Y Output Value" dstnodeid="3" dstpinname="Input">
    </LINK>
-   <LINK srcnodeid="3" srcpinname="Up Edge" dstnodeid="2" dstpinname="Input" linkstyle="VHV">
-   <LINKPOINT x="2310" y="1425">
-   </LINKPOINT>
-   <LINKPOINT x="3240" y="1425">
-   </LINKPOINT>
+   <LINK srcnodeid="3" srcpinname="Up Edge" dstnodeid="2" dstpinname="Input">
    </LINK>
    <BOUNDS type="Window" left="11100" top="4740" width="9150" height="9540">
    </BOUNDS>
@@ -87,13 +83,11 @@
    <LINK srcnodeid="0" srcpinname="Inverse Output" dstnodeid="12" dstpinname="Input 1" linkstyle="Bezier">
    <LINKPOINT x="3555" y="3435">
    </LINKPOINT>
-   <LINKPOINT x="4815" y="420">
+   <LINKPOINT x="5250" y="3915">
    </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="12" srcpinname="Output 1" dstnodeid="13" dstpinname="Input 2" linkstyle="Bezier">
-   <LINKPOINT x="4860" y="2265">
-   </LINKPOINT>
-   <LINKPOINT x="4785" y="1890">
+   <LINK srcnodeid="12" srcpinname="Output 1" dstnodeid="13" dstpinname="Input 2" linkstyle="PolyLine">
+   <LINKPOINT x="4785" y="1980">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="3" srcpinname="Up Edge" dstnodeid="13" dstpinname="Input 1">
