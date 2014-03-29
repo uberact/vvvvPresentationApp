@@ -398,7 +398,7 @@
    </NODE>
    <LINK srcnodeid="72" srcpinname="Output String" dstnodeid="71" dstpinname="Send String">
    </LINK>
-   <LINK srcnodeid="15" srcpinname="Video Position" dstnodeid="70" dstpinname="Video Position" linkstyle="Bezier">
+   <LINK srcnodeid="15" srcpinname="Video Position +  Duration" dstnodeid="70" dstpinname="Video Position + Duration" linkstyle="Bezier">
    <LINKPOINT x="7785" y="10575">
    </LINKPOINT>
    <LINKPOINT x="6495" y="6255">

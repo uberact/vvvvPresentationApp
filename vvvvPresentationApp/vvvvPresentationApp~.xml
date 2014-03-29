@@ -71,9 +71,9 @@
    <LINK srcnodeid="7" srcpinname="Output String" dstnodeid="6" dstpinname="State List">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="8" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="9810" top="195" width="600" height="2835">
+   <BOUNDS type="Box" left="9735" top="300" width="600" height="2835">
    </BOUNDS>
-   <BOUNDS type="Node" left="9810" top="195" width="0" height="0">
+   <BOUNDS type="Node" left="9735" top="300" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="10" values="0,0,0,0,0,0,0,0,0,0">
    </PIN>
@@ -304,20 +304,6 @@
    <PIN pinname="iXY" visible="1">
    </PIN>
    </NODE>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="65" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="60" top="4350" width="2010" height="270">
-   </BOUNDS>
-   <BOUNDS type="Box" left="60" top="4350" width="2145" height="2265">
-   </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="|To do:&cr;&lf;&cr;&lf;Video Rewind&cr;&lf;&cr;&lf;New Felix&apos;s Machines vid|">
-   </PIN>
-   <PIN pinname="Output String" visible="0">
-   </PIN>
-   <PIN pinname="Show Grid" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="String Type" slicecount="1" values="MultiLine">
-   </PIN>
-   </NODE>
    <NODE systemname="VideoLoader" filename="Subpatches\VideoLoader.v4p" componentmode="Hidden" id="15" nodename="Subpatches\VideoLoader.v4p">
    <BOUNDS type="Node" left="3435" top="9150" width="100" height="100">
    </BOUNDS>
@@ -362,7 +348,7 @@
    </LINK>
    <LINK srcnodeid="8" srcpinname="Y Output Value" dstnodeid="21" dstpinname="Input 2">
    </LINK>
-   <NODE systemname="SlideVideos" filename="Subpatches\SlideVideos.v4p" nodename="Subpatches\SlideVideos.v4p" componentmode="Hidden" id="70">
+   <NODE systemname="SlideVideos" filename="Subpatches\SlideVideos.v4p" nodename="Subpatches\SlideVideos.v4p" componentmode="InAWindow" id="70">
    <BOUNDS type="Node" left="4965" top="7995" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Window" left="0" top="0" width="15285" height="15600">
@@ -412,7 +398,7 @@
    </NODE>
    <LINK srcnodeid="72" srcpinname="Output String" dstnodeid="71" dstpinname="Send String">
    </LINK>
-   <LINK srcnodeid="15" srcpinname="Video Position" dstnodeid="70" dstpinname="Video Position" linkstyle="Bezier">
+   <LINK srcnodeid="15" srcpinname="Video Position +  Duration" dstnodeid="70" dstpinname="Video Position" linkstyle="Bezier">
    <LINKPOINT x="7785" y="10575">
    </LINKPOINT>
    <LINKPOINT x="6495" y="6255">

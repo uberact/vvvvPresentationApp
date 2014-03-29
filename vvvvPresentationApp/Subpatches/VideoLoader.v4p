@@ -15,6 +15,10 @@
    </PIN>
    <PIN pinname="Volume" visible="1" slicecount="1" values="1">
    </PIN>
+   <PIN pinname="Position" visible="1">
+   </PIN>
+   <PIN pinname="Duration" visible="1">
+   </PIN>
    </NODE>
    <NODE systemname="R (String Advanced)" filename="%VVVV%\addonpack\lib\nodes\plugins\RSNodes.dll" nodename="R (String Advanced)" componentmode="Hidden" id="4">
    <BOUNDS type="Node" left="8070" top="3150" width="100" height="100">
@@ -233,9 +237,25 @@
    </PIN>
    <PIN pinname="Precision" slicecount="1" values="4">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Video Position|">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Video Position +  Duration|">
+   </PIN>
+   <PIN pinname="Y Input Value" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="2" srcpinname="Position" dstnodeid="50" dstpinname="Y Input Value">
+   <NODE systemname="Vector (2d Join)" nodename="Vector (2d Join)" componentmode="Hidden" id="51">
+   <BOUNDS type="Node" left="7320" top="7770" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="X" visible="1">
+   </PIN>
+   <PIN pinname="Y" visible="1">
+   </PIN>
+   <PIN pinname="XY" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="2" srcpinname="Position" dstnodeid="51" dstpinname="X">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Duration" dstnodeid="51" dstpinname="Y">
+   </LINK>
+   <LINK srcnodeid="51" srcpinname="XY" dstnodeid="50" dstpinname="Y Input Value">
    </LINK>
    </PATCH>
