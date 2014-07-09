@@ -158,7 +158,7 @@
    </LINK>
    <LINK srcnodeid="40" srcpinname="Layer Out" dstnodeid="12" dstpinname="Input Node">
    </LINK>
-   <NODE systemname="VideoImage" filename="VideoImage.v4p" componentmode="InAWindow" id="41" nodename="VideoImage.v4p">
+   <NODE systemname="VideoImage" filename="VideoImage.v4p" componentmode="Hidden" id="41" nodename="VideoImage.v4p">
    <BOUNDS type="Node" left="5175" top="5355" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="5175" top="5355" width="4800" height="3600">

@@ -153,6 +153,10 @@
    </PIN>
    <PIN pinname="Layer 2" visible="1">
    </PIN>
+   <PIN pinname="Input Count" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Layer 3" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="16" srcpinname="Layer" dstnodeid="40" dstpinname="Layer 1">
    </LINK>
@@ -197,13 +201,15 @@
    </BOUNDS>
    <BOUNDS type="Box" left="3840" top="6075" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="10605" top="2700" width="10470" height="10890">
+   <BOUNDS type="Window" left="0" top="0" width="15285" height="15600">
    </BOUNDS>
    <PIN pinname="Play" visible="1">
    </PIN>
    <PIN pinname="iXY" visible="1">
    </PIN>
    <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="46" systemname="IOBox (Value Advanced)">
@@ -377,5 +383,7 @@
    <LINK srcnodeid="59" srcpinname="Transform Out" dstnodeid="41" dstpinname="Transform">
    </LINK>
    <LINK srcnodeid="59" srcpinname="Transform Out" dstnodeid="42" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="45" srcpinname="Layer" dstnodeid="40" dstpinname="Layer 3" hiddenwhenlocked="1">
    </LINK>
    </PATCH>
