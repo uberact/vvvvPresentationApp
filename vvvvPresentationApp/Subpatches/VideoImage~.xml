@@ -53,9 +53,9 @@
    <LINK srcnodeid="9" srcpinname="Render State" dstnodeid="2" dstpinname="Render State">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="13" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="4785" top="2790" width="915" height="285">
+   <BOUNDS type="Box" left="5040" top="2535" width="915" height="285">
    </BOUNDS>
-   <BOUNDS type="Node" left="4785" top="2790" width="0" height="0">
+   <BOUNDS type="Node" left="5040" top="2535" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -67,7 +67,7 @@
    </PIN>
    </NODE>
    <NODE systemname="NOT (Boolean)" nodename="NOT (Boolean)" componentmode="Hidden" id="14">
-   <BOUNDS type="Node" left="4770" top="3390" width="100" height="100">
+   <BOUNDS type="Node" left="5025" top="3135" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -77,9 +77,9 @@
    <LINK srcnodeid="13" srcpinname="Y Output Value" dstnodeid="14" dstpinname="Input">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="15" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="6225" top="1470" width="2010" height="240">
+   <BOUNDS type="Box" left="6480" top="1215" width="2010" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="6225" top="1470" width="0" height="0">
+   <BOUNDS type="Node" left="6480" top="1215" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -91,7 +91,7 @@
    </PIN>
    </NODE>
    <NODE systemname="EQ (Value)" nodename="EQ (Value)" componentmode="Hidden" id="19">
-   <BOUNDS type="Node" left="6240" top="3240" width="100" height="100">
+   <BOUNDS type="Node" left="6495" top="2985" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
@@ -101,7 +101,7 @@
    </PIN>
    </NODE>
    <NODE systemname="AND (Boolean)" nodename="AND (Boolean)" componentmode="Hidden" id="20">
-   <BOUNDS type="Node" left="4770" top="3900" width="100" height="100">
+   <BOUNDS type="Node" left="5025" top="3645" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 2" visible="1" slicecount="1" values="0">
    </PIN>
@@ -195,7 +195,7 @@
    <LINK srcnodeid="28" srcpinname="Output Node" dstnodeid="2" dstpinname="Transform">
    </LINK>
    <NODE systemname="Vector (2d Split)" nodename="Vector (2d Split)" componentmode="Hidden" id="31">
-   <BOUNDS type="Node" left="6225" top="2625" width="100" height="100">
+   <BOUNDS type="Node" left="6480" top="2370" width="100" height="100">
    </BOUNDS>
    <PIN pinname="XY" visible="1">
    </PIN>
@@ -209,7 +209,7 @@
    <LINK srcnodeid="31" srcpinname="X" dstnodeid="19" dstpinname="Input 1">
    </LINK>
    <NODE systemname="EQ (Value)" nodename="EQ (Value)" componentmode="Hidden" id="33">
-   <BOUNDS type="Node" left="6870" top="3255" width="100" height="100">
+   <BOUNDS type="Node" left="7125" top="3000" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1" slicecount="1" values="0">
    </PIN>
@@ -245,9 +245,9 @@
    <LINK srcnodeid="34" srcpinname="Output" dstnodeid="22" dstpinname="Go To Position">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="35" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="7440" top="3285" width="2760" height="270">
+   <BOUNDS type="Node" left="7695" top="3030" width="2760" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="7440" top="3285" width="1725" height="480">
+   <BOUNDS type="Box" left="7695" top="3030" width="1725" height="480">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|Show cover image at start and at end|">
    </PIN>
