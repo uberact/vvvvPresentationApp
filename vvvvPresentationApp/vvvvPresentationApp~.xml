@@ -371,6 +371,8 @@
    </PIN>
    <PIN pinname="Video Position" visible="1">
    </PIN>
+   <BOUNDS type="Box" left="4965" top="7995">
+   </BOUNDS>
    </NODE>
    <LINK srcnodeid="15" srcpinname="Layer" dstnodeid="29" dstpinname="Layer 2">
    </LINK>
@@ -493,7 +495,7 @@
    <LINK srcnodeid="77" srcpinname="Up Edge" dstnodeid="78" dstpinname="Input">
    </LINK>
    <NODE systemname="Change (String)" nodename="Change (String)" componentmode="Hidden" id="79">
-   <BOUNDS type="Node" left="7005" top="7545" width="100" height="100">
+   <BOUNDS type="Node" left="6330" top="7995" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
